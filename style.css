@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Helvetica;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    background-color: #CCCCCC;
+    padding-bottom: 2vh;
+}
+
+h1 {
+    padding: 2vh 0 0 0;
+    font-size: 6vh;
+}
+
+.tabela {
+    margin: 3vh auto 8vh auto;
+    text-align: center;
+}
+
+#inputs {
+    width: 25%;
+    margin: 0 auto;
+}
+
+th {
+    font-size: 4vh;
+}
+
+td {
+    font-size: 2.5vh;
+    padding: 0.5vh 0;
+}
+
+.inputs {
+    width: 80px;
+}
+
+#opcoes {
+    width: 45%;
+    margin: 0 auto;
+}
+
+#espaco {
+    width: 5%;
+}
+
+button {
+    width: 10vw;
+    height: 5vh;
+    font-size: 2.5vh;
+}
+
+#results {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #CCCCCC;
+}
+
+#author {
+    margin: 1vh auto 0 auto;
+    padding: 2vh 0;
+}
+
+img {
+    width: 4vh;
+    background-color: white;
+}
+
+a {
+    font-size: 4vh;
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 4vh;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
+
+    th {
+        font-size: 3vh;
+    }
+    
+    td {
+        font-size: 2vh;
+    }
+
+    #opcoes {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 75px;
+        height: 25px;
+        font-size: 2.5vh;
+    }
+
+    #results {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #results th {
+        font-size: 12px;
+    }
+
+    img {
+        width: 3vh;
+    }
+    
+    a {
+        font-size: 3vh;
+    }
+}
