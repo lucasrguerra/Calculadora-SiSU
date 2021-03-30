@@ -62,6 +62,11 @@ let UFRPE = [
     ],
 
     [
+        document.getElementById("checkboxBachareladoAgronomiaUFRPE"),
+        2, 3, 2, 3, 2, "UFRPE",  "Agronomia", "Bacharelado", 599
+    ],
+
+    [
         document.getElementById("checkboxBachareladoCienciaDaComputacaoUFRPE"),
         3, 4, 1.5, 1.5, 2, "UFRPE", "Ciência Da Computação", "Bacharelado", 651
     ],
