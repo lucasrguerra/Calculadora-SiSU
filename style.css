@@ -29,6 +29,10 @@ h1 {
     margin: 0 auto;
 }
 
+#inputs td {
+    font-size: large;
+}
+
 th {
     font-size: 4vh;
 }
@@ -45,6 +49,15 @@ td {
 #opcoes {
     width: 45%;
     margin: 0 auto;
+}
+
+#selecionar {
+    font-size: larger;
+    padding-bottom: 15px;
+}
+
+#selecionar input {
+    margin-left: 10px;
 }
 
 #espaco {

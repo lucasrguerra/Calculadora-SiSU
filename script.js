@@ -125,20 +125,46 @@ const instituicoes = [
     UPE
 ];
 
+function SelecionarTodosOsCursos() {
+    
+    let Checkbox = document.getElementById("checkboxSelecionarTodosOsCursos");
+
+    if (Checkbox.checked == true) {
+        MarcarOuDesmarcarCheckbox(true);
+    } else {
+        MarcarOuDesmarcarCheckbox(false);
+    };
+};
+
+function MarcarOuDesmarcarCheckbox(boolean) {
+
+    for (let index = 0; index < instituicoes.length; index++) {
+        
+        let instituicao = instituicoes[index];
+
+        for (let contador = 0; contador < instituicao.length; contador++) {
+
+            let curso = instituicao[contador];
+
+            curso[0].checked = boolean;
+        };
+    };
+};
+
 function Calcular() {
 
     DeletarResultadosAnteriores();
 
     ChecarSelecionados();
 
-}
+};
 
 function DeletarResultadosAnteriores() {
 
     while ((linhasDaTabela = document.getElementById("resultado")) != null ) {
         linhasDaTabela.remove();
     }
-}
+};
 
 function ChecarSelecionados() {
 
@@ -148,7 +174,7 @@ function ChecarSelecionados() {
 
         for (let contador = 0; contador < instituicao.length; contador++) {
 
-            const curso = instituicao[contador];
+            let curso = instituicao[contador];
             
             if (curso[0].checked) {
                 CalcularMedia(
@@ -161,12 +187,12 @@ function ChecarSelecionados() {
                     curso[7],
                     curso[8],
                     curso[9],
-                )
+                );
             };
-        }
+        };
 
-    }
-}
+    };
+};
 
 function CalcularMedia(
     pesoLinguagens,
@@ -235,4 +261,4 @@ function Mostrar(instituicao, curso, tipo, media, notaDeCorte, status) {
     let tabela = document.getElementById("results");
     
     tabela.appendChild(LinhaDaTabela);
-}
+};
