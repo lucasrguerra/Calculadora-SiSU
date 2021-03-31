@@ -72,6 +72,11 @@ let UFPE = [
     ],
 
     [
+        "BachareladoCienciasPoliticasUFPE",
+        3, 2, 3, 1, 1, "UFPE", "Ciências Políticas", "Licenciatura", 614
+    ],
+
+    [
         "BachareladoCienciasSociaisUFPE",
         2, 1, 3, 1, 3, "UFPE", "Ciências Sociais", "Licenciatura", 623
     ],
