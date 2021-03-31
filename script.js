@@ -107,6 +107,11 @@ let UFPE = [
     ],
 
     [
+        "BachareladoMedicinaUFPE",
+        2, 2, 1, 3, 2, "UFPE", "Medicina", "Bacharelado", 727
+    ],
+
+    [
         "PsicologiaUFPE",
         1.5, 1, 3, 2, 2.5, "UFPE", "Psicologia", "Bacharelado", 678
     ]
