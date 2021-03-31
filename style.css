@@ -84,6 +84,11 @@ footer {
     padding: 2vh 0;
 }
 
+#foto {
+    background-color: transparent;
+    width: 25vh;
+}
+
 img {
     width: 4vh;
     background-color: white;
@@ -131,6 +136,10 @@ a {
 
     #results th {
         font-size: 12px;
+    }
+
+    #foto {
+        width: 20vh;
     }
 
     img {

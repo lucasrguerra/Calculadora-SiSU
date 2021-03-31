@@ -1,134 +1,184 @@
-let UFPE = [
-    [
-        document.getElementById("checkboxBachareladoAdministracaoUFPE"),
-        2, 2.5, 2, 1, 2.5, "UFPE",  "Administração", "Bacharelado", 518
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoArquiteturaEUrbanismoUFPE"),
-        2, 2, 2, 1, 3, "UFPE",  "Arquitetura e Urbanismo", "Bacharelado", 674
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoCienciaDaComputacaoUFPE"),
-        2, 4, 1, 1, 2, "UFPE", "Ciência Da Computação", "Bacharelado", 682
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoCienciasBiologicasUFPE"),
-        1, 2, 1, 3.5, 2.5, "UFPE", "Ciências Biológicas", "Bacharelado", 625
-    ],
-
-    [
-        document.getElementById("checkboxLicenciaturaCienciasBiologicasUFPE"),
-        1, 2, 1, 3, 3, "UFPE", "Ciências Biológicas", "Licenciatura", 613
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoDesignUFPE"),
-        2.5, 2, 2.5, 1, 2, "UFPE",  "Design", "Bacharelado", 630
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoDireitoUFPE"),
-        3, 1, 2, 1, 3, "UFPE",  "Direito", "Bacharelado", 709
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoEnfermagemUFPE"),
-        2, 1.5, 1, 2.5, 3, "UFPE", "Enfermagem", "Bacharelado", 677
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoEngenhariaUFPE"),
-        1, 4, 1, 3, 1, "UFPE", "Engenharia", "Bacharelado", 620
-    ],
-
-    [
-        document.getElementById("checkboxBachareladoEngenhariaDaComputacaoUFPE"),
-        1, 4, 1, 2, 2, "UFPE",  "Engenharia Da Computação", "Bacharelado", 680
-    ],
-
-    [
-        document.getElementById("checkboxPsicologiaUFPE"),
-        1.5, 1, 3, 2, 2.5, "UFPE", "Psicologia", "Bacharelado", 678
-    ]
-];
-
 let UFRPE = [
     [
-        document.getElementById("checkboxBachareladoAdministracaoUFRPE"),
+        "BachareladoAdministracaoUFRPE",
         3, 3.5, 2.5, 1, 2, "UFRPE",  "Administração", "Bacharelado", 518
     ],
 
     [
-        document.getElementById("checkboxBachareladoAgronomiaUFRPE"),
+        "BachareladoAgronomiaUFRPE",
         2, 3, 2, 3, 2, "UFRPE",  "Agronomia", "Bacharelado", 599
     ],
 
     [
-        document.getElementById("checkboxBachareladoCienciaDaComputacaoUFRPE"),
+        "BachareladoCienciaDaComputacaoUFRPE",
         3, 4, 1.5, 1.5, 2, "UFRPE", "Ciência Da Computação", "Bacharelado", 651
     ],
 
     [
-        document.getElementById("checkboxBachareladoCienciasBiologicasUFRPE"),
+        "BachareladoCienciasBiologicasUFRPE",
         3, 1.5, 2, 3.5, 2, "UFRPE", "Ciências Biológicas", "Bacharelado", 601
     ],
 
     [
-        document.getElementById("checkboxLicenciaturaCienciasBiologicasUFRPE"),
+        "LicenciaturaCienciasBiologicasUFRPE",
         3, 1.5, 1.5, 4, 2, "UFRPE", "Ciências Biológicas", "Licenciatura", 587
     ],
 
     [
-        document.getElementById("checkboxLicenciaturaComputacaoUFRPE"),
+        "LicenciaturaComputacaoUFRPE",
         2.5, 3, 1.5, 3, 2, "UFRPE", "Computação", "Licenciatura", 599
     ],
 
     [
-        document.getElementById("checkboxBachareladoEngenhariaAmbientalUFRPE"),
+        "BachareladoEngenhariaAmbientalUFRPE",
         2, 3, 2, 3, 2, "UFRPE", "Engenharia Ambiental", "Bacharelado", 598
     ],
 
     [
-        document.getElementById("checkboxBachareladoEngenhariaEletricaUFRPE"),
+        "BachareladoEngenhariaEletricaUFRPE",
         1.5, 4, 1.5, 3, 2, "UFRPE", "Engenharia Elétrica", "Bacharelado", 604
     ],
 
     [
-        document.getElementById("checkboxLicenciaturaFisicaUFRPE"),
+        "LicenciaturaFisicaUFRPE",
         2.5, 3, 1.5, 3, 2, "UFRPE", "Física", "Licenciatura", 597
+    ]
+];
+
+let UFPE = [
+    [
+        "BachareladoAdministracaoUFPE",
+        2, 2.5, 2, 1, 2.5, "UFPE",  "Administração", "Bacharelado", 518
+    ],
+
+    [
+        "BachareladoArquiteturaEUrbanismoUFPE",
+        2, 2, 2, 1, 3, "UFPE",  "Arquitetura e Urbanismo", "Bacharelado", 674
+    ],
+
+    [
+        "BachareladoCienciaDaComputacaoUFPE",
+        2, 4, 1, 1, 2, "UFPE", "Ciência Da Computação", "Bacharelado", 682
+    ],
+
+    [
+        "BachareladoCienciasBiologicasUFPE",
+        1, 2, 1, 3.5, 2.5, "UFPE", "Ciências Biológicas", "Bacharelado", 625
+    ],
+
+    [
+        "LicenciaturaCienciasBiologicasUFPE",
+        1, 2, 1, 3, 3, "UFPE", "Ciências Biológicas", "Licenciatura", 613
+    ],
+
+    [
+        "BachareladoDesignUFPE",
+        2.5, 2, 2.5, 1, 2, "UFPE",  "Design", "Bacharelado", 630
+    ],
+
+    [
+        "BachareladoDireitoUFPE",
+        3, 1, 2, 1, 3, "UFPE",  "Direito", "Bacharelado", 709
+    ],
+
+    [
+        "BachareladoEnfermagemUFPE",
+        2, 1.5, 1, 2.5, 3, "UFPE", "Enfermagem", "Bacharelado", 677
+    ],
+
+    [
+        "BachareladoEngenhariaUFPE",
+        1, 4, 1, 3, 1, "UFPE", "Engenharia", "Bacharelado", 620
+    ],
+
+    [
+        "BachareladoEngenhariaDaComputacaoUFPE",
+        1, 4, 1, 2, 2, "UFPE",  "Engenharia Da Computação", "Bacharelado", 680
+    ],
+
+    [
+        "PsicologiaUFPE",
+        1.5, 1, 3, 2, 2.5, "UFPE", "Psicologia", "Bacharelado", 678
     ]
 ];
 
 let UPE = [
     [
-        document.getElementById("checkboxBachareladoDireitoUPE"),
+        "BachareladoAdministracaoDeEmpresasUPE",
+        1, 1, 1, 1, 1, "UFRPE",  "Administração de Empresas", "Bacharelado", 625
+    ],
+    
+    [
+        "BachareladoDireitoUPE",
         1, 1, 1, 1, 1, "UPE",  "Direito", "Bacharelado", 731
     ],
 
     [
-        document.getElementById("checkboxBachareladoEngenhariaDaComputacaoUPE"),
+        "BachareladoEngenhariaCivilUPE",
+        1, 1, 1, 1, 1, "UPE", "Engenharia Civil", "Bacharelado", 615
+    ],
+
+    [
+        "BachareladoEngenhariaDaComputacaoUPE",
         1, 1, 1, 1, 1, "UPE",  "Engenharia Da Computação", "Bacharelado", 705
     ],
 
     [
-        document.getElementById("checkboxBachareladoEngenhariaEletronicaUPE"),
+        "BachareladoEngenhariaEletronicaUPE",
         1, 1, 1, 1, 1, "UPE",  "Engenharia Eletrônica", "Bacharelado", 683
     ],
 
     [
-        document.getElementById("checkboxBachareladoEngenhariaEletricaUPE"),
+        "BachareladoEngenhariaEletricaUPE",
         1, 1, 1, 1, 1, "UPE",  "Engenharia Elétrica", "Bacharelado", 665
     ]
 ];
 
 const instituicoes = [
-    UFPE,
     UFRPE,
+    UFPE,
     UPE
-];
+]
+
+GerarCursos();
+
+function GerarCursos() {
+
+    let tabelaOpcoes = document.getElementById("opcoes");
+
+    for (let index = 0; index < instituicoes.length; index++) {
+
+        let instituicao = instituicoes[index];
+
+        for (let contador = 0; contador < instituicao.length; contador++) {
+
+            let curso = instituicao[contador];
+
+            let LinhaDaTabela = document.createElement("tr");
+
+            let colunaInstituicao = document.createElement("td");
+            let colunaCurso = document.createElement("td");
+            let colunaTipo = document.createElement("td");
+            let colunaInput = document.createElement("td");
+
+            let input = document.createElement("input");
+            input.type = "checkbox";
+            input.id = `checkbox${curso[0]}`;
+
+            colunaInstituicao.appendChild(document.createTextNode(curso[6]));
+            colunaCurso.appendChild(document.createTextNode(curso[7]));
+            colunaTipo.appendChild(document.createTextNode(curso[8]));
+            colunaInput.appendChild(input);
+
+            LinhaDaTabela.appendChild(colunaInstituicao);
+            LinhaDaTabela.appendChild(colunaCurso);
+            LinhaDaTabela.appendChild(colunaTipo);
+            LinhaDaTabela.appendChild(colunaInput);
+
+            tabelaOpcoes.appendChild(LinhaDaTabela);
+        };
+    };
+};
 
 function SelecionarTodosOsCursos() {
     
@@ -151,7 +201,10 @@ function MarcarOuDesmarcarCheckbox(boolean) {
 
             let curso = instituicao[contador];
 
-            curso[0].checked = boolean;
+            let id = curso[0];
+            console.log(id);
+
+            document.getElementById(`checkbox${curso[0]}`).checked = boolean;
         };
     };
 };
@@ -181,7 +234,7 @@ function ChecarSelecionados() {
 
             let curso = instituicao[contador];
             
-            if (curso[0].checked) {
+            if (document.body.getClientRects(curso[0]).checked) {
                 CalcularMedia(
                     curso[1],
                     curso[2],
@@ -252,7 +305,7 @@ function Mostrar(instituicao, curso, tipo, media, notaDeCorte, status) {
     colunaNotaDeCorte.appendChild(document.createTextNode(notaDeCorte));
     colunaStatus.appendChild(document.createTextNode(status));
 
-    let LinhaDaTabela = document.createElement("tr");
+    c
 
     LinhaDaTabela.id = "resultado"
 
@@ -263,7 +316,7 @@ function Mostrar(instituicao, curso, tipo, media, notaDeCorte, status) {
     LinhaDaTabela.appendChild(colunaNotaDeCorte);
     LinhaDaTabela.appendChild(colunaStatus);
 
-    let tabela = document.getElementById("results");
+    let tabelaResults = document.getElementById("results");
     
-    tabela.appendChild(LinhaDaTabela);
+    tabelaResults.appendChild(LinhaDaTabela);
 };
