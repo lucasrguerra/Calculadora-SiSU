@@ -105,7 +105,12 @@ let UFPE = [
 let UPE = [
     [
         "BachareladoAdministracaoDeEmpresasUPE",
-        1, 1, 1, 1, 1, "UPE",  "Administração de Empresas", "Bacharelado", 625
+        1, 1, 1, 1, 1, "UPE",  "Administração de Empresas", "Bacharelado", 670
+    ],
+
+    [
+        "BachareladoCienciasBiologicasUPE",
+        1, 1, 1, 1, 1, "UPE", "Ciências Biológicas", "Bacharelado", 624
     ],
     
     [
@@ -114,8 +119,13 @@ let UPE = [
     ],
 
     [
+        "BachareladoEnfermagemUPE",
+        1, 1, 1, 1, 1, "UPE", "Enfermagem", "Bacharelado", 681
+    ],
+
+    [
         "BachareladoEngenhariaCivilUPE",
-        1, 1, 1, 1, 1, "UPE", "Engenharia Civil", "Bacharelado", 615
+        1, 1, 1, 1, 1, "UPE", "Engenharia Civil", "Bacharelado", 673
     ],
 
     [
@@ -131,6 +141,11 @@ let UPE = [
     [
         "BachareladoEngenhariaEletricaUPE",
         1, 1, 1, 1, 1, "UPE",  "Engenharia Elétrica", "Bacharelado", 665
+    ],
+
+    [
+        "BachareladoMedicinaUPE",
+        1, 1, 1, 1, 1, "UPE", "Medicina", "Bacharelado", 777
     ]
 ];
 
@@ -201,9 +216,6 @@ function MarcarOuDesmarcarCheckbox(boolean) {
 
             let curso = instituicao[contador];
 
-            let id = curso[0];
-            console.log(id);
-
             document.getElementById(`checkbox${curso[0]}`).checked = boolean;
         };
     };
@@ -234,7 +246,7 @@ function ChecarSelecionados() {
 
             let curso = instituicao[contador];
             
-            if (document.body.getClientRects(curso[0]).checked) {
+            if (document.getElementById(`checkbox${curso[0]}`).checked == true) {
                 CalcularMedia(
                     curso[1],
                     curso[2],
@@ -305,8 +317,7 @@ function Mostrar(instituicao, curso, tipo, media, notaDeCorte, status) {
     colunaNotaDeCorte.appendChild(document.createTextNode(notaDeCorte));
     colunaStatus.appendChild(document.createTextNode(status));
 
-    c
-
+    let LinhaDaTabela = document.createElement("tr");
     LinhaDaTabela.id = "resultado"
 
     LinhaDaTabela.appendChild(colunaInstituicao);
