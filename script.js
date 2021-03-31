@@ -57,11 +57,6 @@ let UFPE = [
     ],
 
     [
-        "BachareladoCienciaDaComputacaoUFPE",
-        2, 4, 1, 1, 2, "UFPE", "Ciência Da Computação", "Bacharelado", 682
-    ],
-
-    [
         "BachareladoCienciasBiologicasUFPE",
         1, 2, 1, 3.5, 2.5, "UFPE", "Ciências Biológicas", "Bacharelado", 625
     ],
@@ -69,6 +64,16 @@ let UFPE = [
     [
         "LicenciaturaCienciasBiologicasUFPE",
         1, 2, 1, 3, 3, "UFPE", "Ciências Biológicas", "Licenciatura", 613
+    ],
+
+    [
+        "BachareladoCienciaDaComputacaoUFPE",
+        2, 4, 1, 1, 2, "UFPE", "Ciência Da Computação", "Bacharelado", 682
+    ],
+
+    [
+        "BachareladoCienciasSociaisUFPE",
+        2, 1, 3, 1, 3, "UFPE", "Ciências Sociais", "Licenciatura", 623
     ],
 
     [
@@ -97,6 +102,11 @@ let UFPE = [
     ],
 
     [
+        "FilosofiaUFPE",
+        2, 1, 3, 2, 2, "UFPE", "Filosofia", "Bacharelado", 588
+    ],
+
+    [
         "PsicologiaUFPE",
         1.5, 1, 3, 2, 2.5, "UFPE", "Psicologia", "Bacharelado", 678
     ]
@@ -111,6 +121,11 @@ let UPE = [
     [
         "BachareladoCienciasBiologicasUPE",
         1, 1, 1, 1, 1, "UPE", "Ciências Biológicas", "Bacharelado", 624
+    ],
+
+    [
+        "BachareladoCienciasSociaisUPE",
+        1, 1, 1, 1, 1, "UPE", "Ciências Sociais", "Licenciatura", 617
     ],
     
     [
