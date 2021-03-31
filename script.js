@@ -105,7 +105,7 @@ let UFPE = [
 let UPE = [
     [
         "BachareladoAdministracaoDeEmpresasUPE",
-        1, 1, 1, 1, 1, "UFRPE",  "Administração de Empresas", "Bacharelado", 625
+        1, 1, 1, 1, 1, "UFPE",  "Administração de Empresas", "Bacharelado", 625
     ],
     
     [
