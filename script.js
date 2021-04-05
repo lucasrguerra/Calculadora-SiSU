@@ -50,6 +50,11 @@ let UFRPE = [
     ],
     
     [
+        "BachareladoMatematicaUFRPE",
+        3, 4, 1.5, 1.5, 2, "UFRPE", "Matemática", "Bacharelado", 618
+    ],
+    
+    [
         "BachareladoSistemasDeInformacaoUFRPE",
         2.5, 3, 1.5, 3, 2, "UFRPE", "Sistemas de Informação", "Bacharelado", 675
     ]
@@ -127,8 +132,18 @@ let UFPE = [
     ],
 
     [
-        "FilosofiaUFPE",
+        "BachareladoFilosofiaUFPE",
         2, 1, 3, 2, 2, "UFPE", "Filosofia", "Bacharelado", 588
+    ],
+    
+    [
+        "BachareladoMatematicaUFPE",
+        1, 4.5, 1, 1.5, 2, "UFPE", "Matemática", "Bacharelado", 614
+    ],
+    
+    [
+        "LicenciaturaMatematicaUFPE",
+        1.5, 4, 1, 1.5, 2, "UFPE", "Matemática", "Licenciatura", 647
     ],
 
     [
