@@ -28,6 +28,11 @@ let UFRPE = [
         "LicenciaturaComputacaoUFRPE",
         2.5, 3, 1.5, 3, 2, "UFRPE", "Computação", "Licenciatura", 599
     ],
+    
+    [
+        "LicenciaturaEducacaoFisicaUFRPE",
+        4, 1, 4, 1, 2, "UFPE", "Educação Física", "Licenciatura", 588
+    ],
 
     [
         "BachareladoEngenhariaAmbientalUFRPE",
@@ -42,6 +47,11 @@ let UFRPE = [
     [
         "LicenciaturaFisicaUFRPE",
         2.5, 3, 1.5, 3, 2, "UFRPE", "Física", "Licenciatura", 597
+    ],
+    
+    [
+        "BachareladoSistemasDeInformacaoUFRPE",
+        2.5, 3, 1.5, 3, 2, "UFRPE", "Sistemas de Informação", "Bacharelado", 675
     ]
 ];
 
@@ -90,6 +100,16 @@ let UFPE = [
         "BachareladoDireitoUFPE",
         3, 1, 2, 1, 3, "UFPE",  "Direito", "Bacharelado", 709
     ],
+    
+    [
+        "BachareladoEducacaoFisicaUFPE",
+        2, 1.5, 1.5, 2.5, 2.5, "UFPE", "Educação Física", "Bacharelado", 615,
+    ],
+    
+    [
+        "LicenciaturaEducacaoFisicaUFPE",
+        2, 1, 2, 3, 2, "UFPE", "Educação Física", "Licenciatura", 588
+    ],
 
     [
         "BachareladoEnfermagemUFPE",
@@ -115,10 +135,20 @@ let UFPE = [
         "BachareladoMedicinaUFPE",
         2, 2, 1, 3, 2, "UFPE", "Medicina", "Bacharelado", 727
     ],
+    
+    [
+        'BachareladoOdontologiaUFPE',
+        1.5, 1, 1.5, 3, 3, "UFPE", "Odontologia", "Bacharelado", 704,
+    ],
 
     [
-        "PsicologiaUFPE",
+        "BachareladoPsicologiaUFPE",
         1.5, 1, 3, 2, 2.5, "UFPE", "Psicologia", "Bacharelado", 678
+    ],
+    
+    [
+        "BachareladoSistemasDeInformacaoUFPE",
+        2, 3, 1, 1, 3, "UFPE", "Sistemas de Informação", "Bacharelado", 690
     ]
 ];
 
