@@ -7,6 +7,7 @@ import NumberInput from '../components/numberInput';
 import CourseCard from '../components/courseCard';
 import { useState, useEffect } from 'react';
 import capitalize from 'capitalize-pt-br';
+import Head from 'next/head';
 
 function IndexPage() {
   const [linguagens, setLinguagens] = useState('');
@@ -147,6 +148,14 @@ function IndexPage() {
 
   return (
     <center className="bg-cyan-500">
+      <Head>
+        <title>Calculadora SiSU</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Lucas Rayan Guerra" />
+        <link rel="icon" href="./icon.png" type="image/x-icon" />
+        <meta name="description" content="Compare a sua nota do ENEM com as notas da edição 2021.1 do SiSU" />
+      </Head>
+
       <div className="bg-slate-900">
         <br />
         <h1 className="text-4xl text-white font-bold">
