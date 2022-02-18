@@ -74,7 +74,7 @@ function IndexPage() {
           };
         }}
       > 
-        <option></option>
+        <option>Selecione</option>
         {universitiesOfState.map((university) => {
           return <option value={university.initials} >{university.initials}</option>
         })}
@@ -102,7 +102,7 @@ function IndexPage() {
           });
         }}
       > 
-        <option></option>
+        <option>Selecione</option>
         {quotas.map((quota, index) => {
           return <option value={quota} >{index + 1}</option>
         })}
@@ -121,7 +121,7 @@ function IndexPage() {
           setCourse(courses[event.target.value]);
         }}
       > 
-        <option></option>
+        <option>Selecione</option>
         {courses.map((coursee, index) => {
           return <option value={index} >{`${capitalize(coursee.DS_GRAU)} - ${capitalize(coursee.NO_CURSO)} - ${capitalize(coursee.DS_TURNO)}`}</option>
         })}
@@ -153,6 +153,7 @@ function IndexPage() {
         <meta charset="UTF-8" />
         <meta name="author" content="Lucas Rayan Guerra" />
         <link rel="icon" href="./icon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./icon.png" type="image/x-icon" />
         <meta name="description" content="Compare a sua nota do ENEM com as notas da edição 2021.1 do SiSU" />
       </Head>
 
@@ -233,7 +234,7 @@ function IndexPage() {
             <div className="py-2">
               <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Estado<br /></label>
               <select
-                className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+                className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
                 name="state"
                 id="state"
                 value={state}
