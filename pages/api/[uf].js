@@ -1,0 +1,56 @@
+'use strict';
+
+import ac from '../../public/ac.json';
+import al from '../../public/al.json';
+import ba from '../../public/ba.json';
+import ce from '../../public/ce.json';
+import df from '../../public/df.json';
+import es from '../../public/es.json';
+import go from '../../public/go.json';
+import ma from '../../public/ma.json';
+import mg from '../../public/mg.json';
+import ms from '../../public/ms.json';
+import mt from '../../public/mt.json';
+import pa from '../../public/pa.json';
+import pb from '../../public/pb.json';
+import pe from '../../public/pe.json';
+import pi from '../../public/pi.json';
+import pr from '../../public/pr.json';
+import rj from '../../public/rj.json';
+import rn from '../../public/rn.json';
+import rr from '../../public/rr.json';
+import rs from '../../public/rs.json';
+import sc from '../../public/sc.json';
+import se from '../../public/se.json';
+import sp from '../../public/sp.json';
+import to from '../../public/to.json';
+
+export default function dataHandler({ query: { uf } }, response) {
+  switch(uf) {
+    case 'ac': return response.status(200).json(ac);
+    case 'al': return response.status(200).json(al);
+    case 'ba': return response.status(200).json(ba);
+    case 'ce': return response.status(200).json(ce);
+    case 'df': return response.status(200).json(df);
+    case 'es': return response.status(200).json(es);
+    case 'go': return response.status(200).json(go);
+    case 'ma': return response.status(200).json(ma);
+    case 'mg': return response.status(200).json(mg);
+    case 'ms': return response.status(200).json(ms);
+    case 'mt': return response.status(200).json(mt);
+    case 'pa': return response.status(200).json(pa);
+    case 'pb': return response.status(200).json(pb);
+    case 'pe': return response.status(200).json(pe);
+    case 'pi': return response.status(200).json(pi);
+    case 'pr': return response.status(200).json(pr);
+    case 'rj': return response.status(200).json(rj);
+    case 'rn': return response.status(200).json(rn);
+    case 'rr': return response.status(200).json(rr);
+    case 'rs': return response.status(200).json(rs);
+    case 'sc': return response.status(200).json(sc);
+    case 'se': return response.status(200).json(se);
+    case 'sp': return response.status(200).json(sp);
+    case 'to': return response.status(200).json(to);
+    default: return response.status(404).send('Bad Request');
+  };
+};
