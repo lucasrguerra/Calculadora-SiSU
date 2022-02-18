@@ -28,7 +28,7 @@ function IndexPage() {
   const [selectQuota, setSelectQuota] = useState(<div className="py-2">
     <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Cota<br /></label>
     <select
-      className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+      className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
       name="quota"
       id="quota">
     </select>
@@ -39,7 +39,7 @@ function IndexPage() {
   const [selectUniversity, setSelectUniversity] = useState(<div className="py-2">
     <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Instituição<br /></label>
     <select
-      className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+      className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
       name="university"
       id="university">
     </select>
@@ -50,7 +50,7 @@ function IndexPage() {
   const [selectCourse, setSelectCourse] = useState(<div className="py-2">
     <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Curso<br /></label>
     <select
-      className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+      className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
       name="university"
       id="university">
     </select>
@@ -60,7 +60,7 @@ function IndexPage() {
     setSelectUniversity(<div className="py-2">
       <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Instituição<br /></label>
       <select
-        className="mx-auto rounded-xl text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
+        className="mx-auto rounded-xl bg-white text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
         name="university"
         id="university"
         onChange={(event) => {
@@ -90,7 +90,7 @@ function IndexPage() {
     setSelectQuota(<div className="py-2">
       <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Cota<br /></label>
       <select
-        className="mx-auto rounded-xl text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
+        className="mx-auto rounded-xl bg-white text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
         name="quota"
         id="quota"
         onChange={(event) => {
@@ -114,7 +114,7 @@ function IndexPage() {
     setSelectCourse(<div className="py-2">
       <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Curso<br /></label>
       <select
-        className="mx-auto rounded-xl text-sm md:text-base text-center border-gray-300 py-1 border-2 w-11/12"
+        className="mx-auto rounded-xl bg-white text-sm md:text-base text-center border-gray-300 py-1 border-2 w-11/12"
         name="course"
         id="course"
         onChange={(event) => {
