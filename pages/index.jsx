@@ -157,7 +157,7 @@ function IndexPage() {
         <meta name="description" content="Compare a sua nota do ENEM com as notas da edição 2021.1 do SiSU" />
         <meta property="og:title" content="Calculadora SiSU" />
         <meta property="og:url" content="https://calculadora-sisu.vercel.app/" />
-        <meta property="og:image" content="./icon.png" />
+        <meta property="og:image" content="https://calculadora-sisu.vercel.app/icon.png" />
         <meta property="og:description" content="Compare a sua nota do ENEM com as notas da edição 2021.1 do SiSU" />
         <meta property="og:site_name" content="Calculadora SiSU" />
         <meta property='article:author' content='https://github.com/lucasrguerra' />
