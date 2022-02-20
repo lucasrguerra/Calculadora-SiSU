@@ -12,7 +12,7 @@ function CourseCard({ course, linguagens, humanas, natureza, matematica, redacao
   console.log(sumRedacao)
   var sumGrades = sumLinguagens + sumHumanas + sumNatureza + sumMatematica + sumRedacao;
   var sumWeights = course.PESO_LINGUAGENS + course.PESO_CIENCIAS_HUMANAS + course.PESO_CIENCIAS_NATUREZA + course.PESO_MATEMATICA + course.PESO_REDACAO;
-  var grade = parseFloat(sumGrades / sumWeights).toFixed(2);
+  var grade = parseFloat((sumGrades / sumWeights) * (parseFloat(course.NU_PERCENTUAL_BONUS) / 100)).toFixed(2);
 
   var status = (<span className='font-bold text-red-600'>Reprovad@</span>);
 
@@ -27,12 +27,14 @@ function CourseCard({ course, linguagens, humanas, natureza, matematica, redacao
   };
   
   return (
-    <center className="col-span-1 rounded-xl border-2 border-teal-700 shadow-xl">
-      <div className="bg-teal-500 py-1 px-2 text-lg font-semibold rounded-t-xl text-white">
+    <center className="col-span-1 rounded-xl bg-white border-2 border-teal-700 shadow-xl">
+      <div className="bg-teal-500 py-1 px-2 text-lg font-semibold rounded-t-lg text-white">
         <h4>{capitalize(course.NO_CURSO)}</h4>
       </div>
-      <div className='p-2 bg-white rounded-b-lg'>
-        <div className='flex justify-aroung gap-3'>
+      <div className='pb-2 px-2 rounded-b-lg'>
+        <p className='py-2 text-lg font-bold'>Informações do curso</p>
+
+        <div className='flex divide-x-2 justify-aroung gap-3'>
           <div className='w-6/12'>
             <p className='font-semibold'>Instuição:&nbsp;
               <span className='font-bold text-blue-700'>{(course.SG_IES).toUpperCase()}</span>
@@ -56,6 +58,17 @@ function CourseCard({ course, linguagens, humanas, natureza, matematica, redacao
               {status}
             </p>
           </div>
+        </div>
+        <div>
+          <p className='font-semibold'>Quantidades de Períodos:&nbsp;
+            <span className='font-bold text-blue-700'>{course.QT_SEMESTRE}</span>
+          </p>
+          <p className='font-semibold'>Vagas ofertadas:&nbsp;
+            <span className='font-bold text-blue-700'>{course.QT_VAGAS_OFERTADAS}</span>
+          </p>
+          <p className='font-semibold'>Inscritos:&nbsp;
+            <span className='font-bold text-blue-700'>{course.QT_INSCRICAO}</span>
+          </p>
         </div>
         
 

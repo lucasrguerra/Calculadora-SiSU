@@ -7,6 +7,7 @@ import NumberInput from '../components/numberInput';
 import CourseCard from '../components/courseCard';
 import { useState, useEffect } from 'react';
 import capitalize from 'capitalize-pt-br';
+import Menu from '../components/menu';
 import Head from 'next/head';
 
 function IndexPage() {
@@ -162,6 +163,7 @@ function IndexPage() {
           Calculadora SiSU
         </h1>
         <br />
+        
         <div className="bg-blue-700 h-2" />
       </div>
 
