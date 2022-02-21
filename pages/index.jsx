@@ -29,7 +29,7 @@ function IndexPage() {
   const [selectQuota, setSelectQuota] = useState(<div className="py-2">
     <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Cota<br /></label>
     <select
-      className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+      className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
       name="quota"
       id="quota">
     </select>
@@ -40,7 +40,7 @@ function IndexPage() {
   const [selectUniversity, setSelectUniversity] = useState(<div className="py-2">
     <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Instituição<br /></label>
     <select
-      className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+      className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
       name="university"
       id="university">
     </select>
@@ -51,7 +51,7 @@ function IndexPage() {
   const [selectCourse, setSelectCourse] = useState(<div className="py-2">
     <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Curso<br /></label>
     <select
-      className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+      className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
       name="university"
       id="university">
     </select>
@@ -61,7 +61,7 @@ function IndexPage() {
     setSelectUniversity(<div className="py-2">
       <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Instituição<br /></label>
       <select
-        className="mx-auto rounded-xl text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
+        className="mx-auto rounded-xl bg-white text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
         name="university"
         id="university"
         onChange={(event) => {
@@ -75,7 +75,7 @@ function IndexPage() {
           };
         }}
       > 
-        <option></option>
+        <option>Selecione</option>
         {universitiesOfState.map((university) => {
           return <option value={university.initials} >{university.initials}</option>
         })}
@@ -91,7 +91,7 @@ function IndexPage() {
     setSelectQuota(<div className="py-2">
       <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Cota<br /></label>
       <select
-        className="mx-auto rounded-xl text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
+        className="mx-auto rounded-xl bg-white text-sm md:text-base text-center border-gray-300 py-1 border-2 w-3/5"
         name="quota"
         id="quota"
         onChange={(event) => {
@@ -103,7 +103,7 @@ function IndexPage() {
           });
         }}
       > 
-        <option></option>
+        <option>Selecione</option>
         {quotas.map((quota, index) => {
           return <option value={quota} >{index + 1}</option>
         })}
@@ -115,14 +115,14 @@ function IndexPage() {
     setSelectCourse(<div className="py-2">
       <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Curso<br /></label>
       <select
-        className="mx-auto rounded-xl text-sm md:text-base text-center border-gray-300 py-1 border-2 w-11/12"
+        className="mx-auto rounded-xl bg-white text-sm md:text-base text-center border-gray-300 py-1 border-2 w-11/12"
         name="course"
         id="course"
         onChange={(event) => {
           setCourse(courses[event.target.value]);
         }}
       > 
-        <option></option>
+        <option>Selecione</option>
         {courses.map((coursee, index) => {
           return <option value={index} >{`${capitalize(coursee.DS_GRAU)} - ${capitalize(coursee.NO_CURSO)} - ${capitalize(coursee.DS_TURNO)}`}</option>
         })}
@@ -154,7 +154,14 @@ function IndexPage() {
         <meta charset="UTF-8" />
         <meta name="author" content="Lucas Rayan Guerra" />
         <link rel="icon" href="./icon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./icon.png" type="image/x-icon" />
         <meta name="description" content="Compare a sua nota do ENEM com as notas da edição 2021.1 do SiSU" />
+        <meta property="og:title" content="Calculadora SiSU" />
+        <meta property="og:url" content="https://calculadora-sisu.vercel.app/" />
+        <meta property="og:image" content="https://calculadora-sisu.vercel.app/icon.png" />
+        <meta property="og:description" content="Compare a sua nota do ENEM com as notas da edição 2021.1 do SiSU" />
+        <meta property="og:site_name" content="Calculadora SiSU" />
+        <meta property='article:author' content='https://github.com/lucasrguerra' />
       </Head>
 
       <div className="bg-slate-900">
@@ -235,7 +242,7 @@ function IndexPage() {
             <div className="py-2">
               <label className="text-gray-500 mx-auto text-sm md:text-lg font-bold" htmlFor="nome">Estado<br /></label>
               <select
-                className="mx-auto rounded-xl text-center border-gray-300 py-1 border-2 w-3/5"
+                className="mx-auto rounded-xl bg-white text-center border-gray-300 py-1 border-2 w-3/5"
                 name="state"
                 id="state"
                 value={state}
