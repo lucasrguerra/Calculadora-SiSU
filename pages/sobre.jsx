@@ -1,10 +1,8 @@
 'use strict';
 
-import 'tailwindcss/tailwind.css';
-
-function App({ Component, pageProps: { ...pageProps } }) {
-  return (
-    <Component {...pageProps} />
-  );
+function Sobre(props) {
+  return (<div>
+    Em desenvolvimento
+  </div>);
 };
-export default App;
+export default Sobre;
