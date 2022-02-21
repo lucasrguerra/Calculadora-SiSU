@@ -31,6 +31,7 @@ function CourseCard({ course, linguagens, humanas, natureza, matematica, redacao
       <div className="bg-teal-500 py-1 px-2 text-lg font-semibold rounded-t-lg text-white">
         <h4>{capitalize(course.NO_CURSO)}</h4>
       </div>
+      
       <div className='pb-2 px-2 rounded-b-lg'>
         <p className='py-2 text-lg font-bold'>Informações do curso</p>
 
