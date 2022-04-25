@@ -1,4 +1,4 @@
-# calculadora-sisu
+# Calculadora SiSU
 
 ## Uso normal
 
