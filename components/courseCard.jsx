@@ -93,7 +93,7 @@ function CourseCard({ course, linguagens, humanas, natureza, matematica, redacao
           </p>
         </div>
 
-        <p className='py-2 text-lg font-bold'>Dados do Instituição</p>
+        <p className='py-2 text-lg font-bold'>Dados da Instituição</p>
         <div>
           <p className='font-semibold'>Campus:&nbsp;
             <span className='font-bold text-blue-700'>{capitalize(course.NO_CAMPUS)}</span>
