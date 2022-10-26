@@ -9,10 +9,9 @@ function CourseCard({ course, linguagens, humanas, natureza, matematica, redacao
   var sumMatematica = (matematica * course.PESO_MATEMATICA);
   var sumRedacao = (redacao * course.PESO_REDACAO);
 
-  console.log(sumRedacao)
   var sumGrades = sumLinguagens + sumHumanas + sumNatureza + sumMatematica + sumRedacao;
   var sumWeights = course.PESO_LINGUAGENS + course.PESO_CIENCIAS_HUMANAS + course.PESO_CIENCIAS_NATUREZA + course.PESO_MATEMATICA + course.PESO_REDACAO;
-  var grade = parseFloat((sumGrades / sumWeights) * (parseFloat(course.NU_PERCENTUAL_BONUS) / 100)).toFixed(2);
+  var grade = parseFloat((sumGrades / sumWeights) + ((sumGrades / sumWeights) * (parseFloat(course.NU_PERCENTUAL_BONUS) / 100))).toFixed(2);
 
   var status = (<span className='font-bold text-red-600'>Reprovad@</span>);
 

@@ -203,7 +203,7 @@ function IndexPage() {
               id={'humanas'}
               number={humanas}
               setNumber={setHumanas}
-              placeholder={'600.0'}
+              placeholder={'600'}
             />
 
             <NumberInput
@@ -219,7 +219,7 @@ function IndexPage() {
               id={'matematica'}
               number={matematica}
               setNumber={setMatematica}
-              placeholder={'610.5'}
+              placeholder={'610'}
             />
 
             <NumberInput
